@@ -16,7 +16,7 @@ import com.revature.models.GroceryList;
 import com.revature.services.GroceryItemService;
 
 @RestController
-@RequestMapping("/grocery-lists/items")
+@RequestMapping("/grocery-lists/{id}/items")
 public class GroceryItemController {
 
 	private GroceryItemService itemService;
