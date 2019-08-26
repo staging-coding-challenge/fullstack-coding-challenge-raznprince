@@ -1,0 +1,23 @@
+<h3>Enter your items here.</h3>
+<form>
+  <input type="text" name="item" id="item">
+  <select name="type" id="itemType">
+    <option value="food"></option>
+    <option value="clothing"></option>
+    <option value="electronics"></option>
+    <option value="sundries"></option>
+    <option value="miscellaneous"></option>
+  </select>
+  <button type="submit" id="submitItem" (click)="submitItem()"></button>
+</form>
+
+<h3>Current items</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Delete?</th>
+  </tr>
+  <tr *ngFor="let item of items">
+  </tr>
+</table>

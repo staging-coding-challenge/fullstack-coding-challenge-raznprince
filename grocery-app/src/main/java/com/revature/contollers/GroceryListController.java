@@ -30,7 +30,7 @@ public class GroceryListController {
 	}
 	
 	@GetMapping(produces=MediaType.APPLICATION_JSON_VALUE)
-	public List<GroceryList> getAllStudySets() {
+	public List<GroceryList> getAllGroceryLists() {
 		return this.listService.getAll();
 	}
 	
