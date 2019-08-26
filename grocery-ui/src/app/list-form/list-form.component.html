@@ -1,15 +1,20 @@
 <h3>Enter your items here.</h3>
 <form>
   <input type="text" name="item" id="item">
+  <br>
   <select name="type" id="itemType">
-    <option value="food"></option>
-    <option value="clothing"></option>
-    <option value="electronics"></option>
-    <option value="sundries"></option>
-    <option value="miscellaneous"></option>
+    <option aria-placeholder disabled>Select</option>
+    <option value="food">Food</option>
+    <option value="clothing">Clothing</option>
+    <option value="electronics">Electronics</option>
+    <option value="sundries">Sundries</option>
+    <option value="miscellaneous">Miscellaneous</option>
   </select>
-  <button type="submit" id="submitItem" (click)="submitItem()"></button>
+  <br>
+  <button type="submit" id="submitItem" (click)="submitItem()">Submit</button>
 </form>
+<br>
+<a routerLink="../grocery-lists">Go to Grocery Lists</a>
 
 <h3>Current items</h3>
 <table>

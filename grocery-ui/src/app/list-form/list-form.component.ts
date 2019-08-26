@@ -10,12 +10,16 @@ export class ListFormComponent implements OnInit {
   item: String;
   itemType: String;
 
-
   constructor() { }
 
   ngOnInit() {
     this.item = null;
     this.itemType = null;
+  }
+
+  submitItem(item, itemType){
+    this.item = item;
+    this.itemType = itemType;
   }
 
 }

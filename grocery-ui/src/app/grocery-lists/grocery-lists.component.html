@@ -1,10 +1,12 @@
 <h2>Grocery Lists</h2>
 
+<a routerLink="/list-form">Add a new grocery List</a>
+<br>
 <table>
   <tr>
     <th>List ID</th>
     <th>Name</th>
   </tr>
-  <tr *ngFor="let list of lists" routerLink="list/{id}">
+  <tr *ngFor="let list of lists" routerLink="list-form/{id}">
   </tr>
 </table>
